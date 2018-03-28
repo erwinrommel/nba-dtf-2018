@@ -5,6 +5,7 @@ const players = require('./players/players.service');
 const teams = require('./teams/teams.service');
 const users = require('./users/users.service');
 const stats = require('./stats/stats.service');
+const admins = require('./admins/admins.service');
 
 
 module.exports = function (app) {
@@ -14,4 +15,5 @@ module.exports = function (app) {
   app.configure(teams);
   app.configure(users);
   app.configure(stats);
+  app.configure(admins);
 };
