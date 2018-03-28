@@ -4,6 +4,11 @@ module.exports = function (app) {
 
       team : {type: mongooseClient.Schema.ObjectId, ref: 'teams'},
 
+      name: {
+        type: String,
+        required: true
+      },           
+
       position: {
         type: String,
         required: true
@@ -19,10 +24,7 @@ module.exports = function (app) {
         required: true
       },
 
-      number: {
-        type: Number,
-        required: true
-      },
+
       
       gp: {
         type: Number,
@@ -69,15 +71,12 @@ module.exports = function (app) {
         required: true
       },
 
-      AveAst: {
+      aveAst: {
         type: Number,
         required: true
       },
       
-      name: {
-        type: String,
-        required: true
-      }            
+ 
       
 
     }, {
