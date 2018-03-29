@@ -1,7 +1,7 @@
 // Initializes the `teams` service on path `/teams`
 const createService = require('feathers-mongoose');
 const createModel = require('../../models/teams.model');
-//const hooks = require('./teams.hooks');
+const hooks = require('./teams.hooks');
 
 module.exports = function (app) {
   const Model = createModel(app);
@@ -19,5 +19,5 @@ module.exports = function (app) {
   // Get our initialized service so that we can register hooks and filters
   const service = app.service('/api/teams');
 
-  //service.hooks(hooks);
+  service.hooks(hooks);
 };

@@ -24,7 +24,7 @@ module.exports = function (app) {
         required: true
       },
 
-
+/*
       
       gp: {
         type: Number,
@@ -76,7 +76,7 @@ module.exports = function (app) {
         required: true
       },
       
- 
+ */
       
 
     }, {
